@@ -1,9 +1,9 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:real_estate/screens/homepage.dart';
 import 'package:real_estate/utils/InputValidator.dart';
 import 'package:real_estate/provider/UserProvider.dart';
-import 'home_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     final Map<String, dynamic> successInformation = await register(_userRegistration);
     if (successInformation['success']) {
 		   Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) =>
-        HomeScreen()), (Route<dynamic> route) => false);
+        HomePage()), (Route<dynamic> route) => false);
 
         AwesomeDialog(
         context: context,

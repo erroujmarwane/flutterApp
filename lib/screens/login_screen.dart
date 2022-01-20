@@ -2,7 +2,7 @@ import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:real_estate/provider/UserProvider.dart';
-import 'package:real_estate/screens/home_screen.dart';
+import 'package:real_estate/screens/homepage.dart';
 import 'package:real_estate/screens/registration_screen.dart';
 import 'package:real_estate/utils/InputValidator.dart';
 
@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
     final Map<String, dynamic> successInformation = await login(_userLogin);
     if (successInformation['success']) {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          context, MaterialPageRoute(builder: (context) => HomePage()));
       AwesomeDialog(
               context: context,
               dialogType: DialogType.SUCCES,
@@ -162,7 +162,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           const SizedBox(
-                            height: 30,
+                            height: 10,
                           ),
                           SizedBox(
                               height: 100,
@@ -183,7 +183,32 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           loginButton,
                           const SizedBox(
-                            height: 45,
+                            height: 30,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              GestureDetector(
+                              child: Image.asset(
+                                "assets/images/facebook.png",
+                                width: 200,
+                              ),
+                              onTap: () {
+                              }),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              GestureDetector(
+                              child: Image.asset(
+                                "assets/images/google.png",
+                                width: 206,
+                              ),
+                              onTap: ()  {
+                              }),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                            ],
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,

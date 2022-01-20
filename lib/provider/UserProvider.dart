@@ -9,12 +9,9 @@ import 'package:real_estate/MODEL/UerModel.dart';
 
 class UserProvider with ChangeNotifier {
   late UserModel _authenticatedUser;
-
   UserModel get authenticatedUser {
     return _authenticatedUser;
   }
-
-
 
   Future<FirebaseApp> initFirebase() async {
     FirebaseApp response;
@@ -112,7 +109,7 @@ class UserProvider with ChangeNotifier {
 
     DocumentSnapshot userDetailsDSnapchot = await FirebaseFirestore.instance
         .collection("Users")
-        .doc("dddddddddd")
+        .doc("AbIZhzgdSwbUOU70Ye0u8xIg3Fm1")
         .get();
         
     print(userDetailsDSnapchot.data());

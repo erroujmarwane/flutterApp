@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:real_estate/provider/ProportiesProvider.dart';
 import 'package:real_estate/provider/UserProvider.dart';
-import 'package:real_estate/screens/login_screen.dart';
 import 'package:real_estate/screens/slider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp( MyApp());
 }
 
@@ -22,6 +23,9 @@ final ThemeData genetalTheme = ThemeData(
       providers: [
         ChangeNotifierProvider(
           create: (_) => UserProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => ProportiesProvider(),
         ),
       ],
       child: MaterialApp(
