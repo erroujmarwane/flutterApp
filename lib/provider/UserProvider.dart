@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:real_estate/MODEL/UerModel.dart';
 
 
@@ -11,6 +12,28 @@ class UserProvider with ChangeNotifier {
   late UserModel _authenticatedUser;
   UserModel get authenticatedUser {
     return _authenticatedUser;
+  }
+
+  final _auth = FirebaseAuth.instance;   
+  final _googleSignIn = GoogleSignIn();
+
+
+  signInWithGoogle() async {
+    try {
+      final GoogleSignInAccount? googleSignInAccount =
+          await _googleSignIn.signIn();
+      if (googleSignInAccount != null) {
+        final GoogleSignInAuthentication googleSignInAuthentication =
+            await googleSignInAccount.authentication;
+        final AuthCredential authCredential = GoogleAuthProvider.credential(
+            accessToken: googleSignInAuthentication.accessToken,
+            idToken: googleSignInAuthentication.idToken);
+        await _auth.signInWithCredential(authCredential);
+      }
+    } on FirebaseAuthException catch (e) {
+      print(e.message);
+      throw e;
+    }
   }
 
   Future<FirebaseApp> initFirebase() async {
@@ -91,6 +114,7 @@ class UserProvider with ChangeNotifier {
   }
   void signOut() async {
     await FirebaseAuth.instance.signOut();
+    await _googleSignIn.signOut();
   }
 
   Future<void> addUser(String uid, Map<String, dynamic> user) async {

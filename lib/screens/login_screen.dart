@@ -203,7 +203,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                 "assets/images/google.png",
                                 width: 206,
                               ),
-                              onTap: ()  {
+                              onTap: ()  async{
+                                userProvider.signInWithGoogle();
+                                Navigator.pushReplacement(
+                                context, MaterialPageRoute(builder: (context) => HomePage()));
                               }),
                               const SizedBox(
                                 height: 20,
