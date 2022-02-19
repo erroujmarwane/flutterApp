@@ -17,6 +17,10 @@ HOME SWEET-HOME is a real estate app that represents an online sellers or buyers
 |------|-------|
 |<img src="assets/home-sweet-home/2.PNG" width="400">|<img src="assets/home-sweet-home/3.PNG" width="400">|
 
+| Home page | Home page|
+|------|-------|
+|<img src="assets/home-sweet-home/4.PNG" width="400">|<img src="assets/home-sweet-home/5.PNG" width="400">|
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
