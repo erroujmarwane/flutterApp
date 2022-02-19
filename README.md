@@ -2,6 +2,12 @@
 
 HOME SWEET-HOME is a real estate app that represents an online sellers or buyers of real estate or real property, Created with Flutter/Firebase.
 
+## ✨ Requirements
+* Any Emulator (preference Android Emulator)
+* Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+* A little knowledge of Dart and Flutter
+* A brain to think 🤓🤓
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
