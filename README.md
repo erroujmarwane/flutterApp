@@ -8,6 +8,9 @@ HOME SWEET-HOME is a real estate app that represents an online sellers or buyers
 * A little knowledge of Dart and Flutter
 * A brain to think 🤓🤓
 
+## 📸 ScreenShots
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
