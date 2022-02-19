@@ -11,34 +11,36 @@ HOME SWEET-HOME is a real estate app that represents an online sellers or buyers
 ## 📸 ScreenShots
 | Start page | Sign in | Sign up|
 |------|------|-------|
-|<img src="assets/home-sweet-home/1.PNG"  width="330">|<img src="assets/home-sweet-home/2.PNG" width="330">|<img  src="assets/home-sweet-home/3.PNG" width="330">|
+|<img src="assets/home-sweet-home/1.PNG"  width="333">|<img src="assets/home-sweet-home/2.PNG" width="333">|<img  src="assets/home-sweet-home/3.PNG" width="333">|
 
+| Home page | Home page| Search page |
+|------|-------|-------|
+|<img src="assets/home-sweet-home/4.PNG" width="333">|<img src="assets/home-sweet-home/5.PNG" width="333">|<img src="assets/home-sweet-home/6.PNG" width="333">|
 
-| Home page | Home page|
-|------|-------|
-|<img src="assets/home-sweet-home/4.PNG" width="350">|<img src="assets/home-sweet-home/5.PNG" width="400">|
-
-| Search page | Detail page|
-|------|-------|
-|<img src="assets/home-sweet-home/6.PNG" width="400">|<img src="assets/home-sweet-home/7.PNG" width="400">|
-
-| Detail page | Categories page|
-|------|-------|
-|<img src="assets/home-sweet-home/8.PNG" width="400">|<img src="assets/home-sweet-home/9.PNG" width="400">|
+| Detail page| Detail page | Categories page|
+|------|-------|-------|
+|<img src="assets/home-sweet-home/7.PNG" width="333">|<img src="assets/home-sweet-home/8.PNG" width="333">|<img src="assets/home-sweet-home/9.PNG" width="333">|
 
 | Validation pop-up |
 |------|
-|<img src="assets/home-sweet-home/10.PNG" width="400">|
+|<img src="assets/home-sweet-home/10.PNG" width="333">|
 
-## Getting Started
+## Building
 
-This project is a starting point for a Flutter application.
+You can follow these instructions to build the app and install it onto your device.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+If you are new to Flutter, please first follow the [Flutter Setup](https://flutter.dev/setup/) guide.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Building and installing the Flutter Design Patterns app
+
+```
+git clone https://github.com/mkobuolys/flutterApp.git
+cd flutterApp
+flutter pub get
+flutter pub run build_runner build --delete-conflicting-outputs
+flutter run
+```
+
+The `flutter run` command both builds and installs the Flutter app to your device or emulator.
