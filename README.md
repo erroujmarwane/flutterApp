@@ -1,6 +1,6 @@
-# real_estate
+# Real Estate App
 
-A new Flutter project.
+HOME SWEET-HOME is a real estate app that represents an online sellers or buyers of real estate or real property, Created with Flutter/Firebase.
 
 ## Getting Started
 
