@@ -12,8 +12,9 @@ HOME SWEET-HOME is a real estate app that represents an online sellers or buyers
 | Start page |
 |------|
 |<img src="assets/home-sweet-home/1.PNG" width="400">|
-| Sign in | Sign up |
-|------|------|
+
+| 1 | 2|
+|------|-------|
 |<img src="assets/home-sweet-home/2.PNG" width="400">|<img src="assets/home-sweet-home/3.PNG" width="400">|
 
 ## Getting Started
